@@ -1,0 +1,57 @@
+#body__{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/New_folder/extra_hd_logo.jpg");
+    background-size: auto 100% ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 10px;
+    background-position-x: calc(50% - 7px);
+}
+.leaderboard{
+    width:80%;
+    max-width: 500px;
+    padding-bottom: 20px;
+    margin: 10px auto;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 12px;
+    border: 1.5px solid #709ac2;
+}
+.my-records{
+    width:80%;
+    max-width: 500px;
+    min-height: 100px;
+    margin: 10px auto;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 12px;
+    border: 1.5px solid #709ac2;
+    padding-bottom: 15px;
+}
+p.my-records-record-info {
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.my-records-record-value{
+    width:60%;
+    height: 40px;
+    margin:0 auto;
+    background-image: url("../../assets/small_quest.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+.my-records-record-value-me{
+    background-image: url("../../assets/small_quest_correct.png");
+}
+.my-records-record-value p{
+    text-align: center;
+    margin:0;
+    color:white
+}

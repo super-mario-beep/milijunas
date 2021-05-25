@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" scrollY="false">
+  <div id="body" style="background-color: black;">
+    <div class="topBox">
+      <img (click)="croLang()" id="cro_img" src="../../assets/croatia.jpg">
+      <img (click)="gerLang()" id="ger_img" src="../../assets/germany.png">
+      <img (click)="soundOff()" id="sound_img" style="float: right;width:55px;border:0px;display:block;margin-right: 15px;"  src="../../assets/sound.png">
+      <img (click)="soundOn()" id="mute_img" style="float: right;width:55px;border:0px;display:none;margin-right: 15px;"  src="../../assets/mute.png">
+    </div>
+
+    <div id="mainBox" class="mainBox" style="height: 331px;">
+      <div (click)="startQuiz()" class="millionareBox">
+        <p id="__1">POKRENI</p>
+      </div>
+      <div (click)="startCustom()" class="millionareBox">
+        <p id="__2">OCIJENITE NAS</p>
+      </div>
+      <div style="display:none" (click)="startRank()" class="millionareBox">
+        <p >ONE MAN SHOW</p>
+      </div>
+      <div (click)="startRank()" class="millionareBox">
+        <p id="__3">LJESTVICA</p>
+      </div>
+      <div (click)="closeApk()" class="millionareBox">
+        <p id="__4">IZLAZ</p>
+      </div>
+    </div>
+
+    <div style="background-color: black;display:none">
+      <ion-input [(ngModel)]="p" placeholder="Pitanje??"></ion-input>
+      <ion-input [(ngModel)]="a" placeholder="a odgovor"></ion-input>
+      <ion-input [(ngModel)]="b" placeholder="b odgovor"></ion-input>
+      <ion-input [(ngModel)]="c" placeholder="c odgovor"></ion-input>
+      <ion-input [(ngModel)]="d" placeholder="d odgovor"></ion-input>
+      <ion-input [(ngModel)]="q"  placeholder="tocan odg / 0-3"></ion-input>
+      <button (click)="CreateQuestion()">Predaj</button>
+    </div>
+
+
+
+
+  </div>
+
+
+</ion-content>

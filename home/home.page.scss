@@ -1,0 +1,53 @@
+#body{
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/New_folder/extra_hd_logo.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-x: calc(50% - 7px);
+}
+.topBox{
+  width:100%;
+  height:80px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.topBox img{
+  float:left;
+  width:70px;
+  height: auto;
+  margin:15px 5px;
+  border:3px solid rgba(0,0,0,0.3);
+}
+.mainBox{
+  width: 100%;
+  height: 415px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s opacity;
+}
+.millionareBox{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  height: 80px;
+  background-image: url("../../assets/big_quest.png");
+  background-size: 100% 80px;
+  background-repeat: no-repeat;
+  padding: 13px
+}
+.millionareBox p{
+  text-align: center;
+  font-weight: bold;
+  color:white;
+  font-size: 16px;
+  height: 80px;
+  vertical-align: middle;
+}
+p{
+  text-transform: uppercase;
+}
+

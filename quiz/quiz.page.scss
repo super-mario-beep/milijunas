@@ -1,0 +1,193 @@
+#body_{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/New_folder/extra_hd_logo.jpg");
+    background-size: auto 100% ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-x: calc(50% - 7px);
+}
+.mainBox{
+    width: 100%;
+    max-width: 500px;
+    min-height: 250px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: bottom 1.6s;
+}
+.millionareBox{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    background-image: url("../../assets/big_quest.png");
+    background-size: 100% 100px;
+    background-repeat: no-repeat;
+}
+.questionBox{
+    margin: 0 auto;
+    height: 85px;
+    width: 85%;
+    padding: 17px 5px 5px 5px;
+}
+.questionBox p{
+    text-align: center;
+    font-weight: bold;
+    margin:0;
+    transition: 0.2s opacity;
+    color:white;
+    font-size: 16px;
+}
+.answersBox{
+    width: 100%;
+    min-height: 150px;
+}
+.singleAnswerBox{
+    width:50%;
+    height: 70px;
+    margin:0;
+    float:left;
+    background-image: url("../../assets/small_quest.png");
+    background-size: 100% 70px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+.singleAnswerBox p{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    font-size: 16px;
+    min-height: 18.4px;
+    margin: 15.8px 0;
+}
+.help{
+    width:100%;
+    height: 90px;
+    max-width: 500px;
+    position: relative;
+    top:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.info{
+    width: 100%;
+}
+.infoStageMoney{
+    width:75%;
+    height: 70px;
+    max-width: 500px;
+    margin: 5px auto 0 auto;
+    background-image: url("../../assets/small_quest_wait.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.infoStageMoney p{
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    margin: 0;
+    padding: 15.8px;
+}
+.fullHelp{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    background-image: url('../../assets/New_folder/extra_hd_logo.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: 0px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: calc(-100%);
+    transition: all 0.5s;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.currentMoneyWin{
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    bottom: 70px;
+    margin-left: 100%;
+    transition: margin-left 1.2s;
+}
+.joker{
+    width: 33.33%;
+    float: left;
+    height: 75px;
+    background-size: 100% 100%;
+    background-position-x: center;
+    position: absolute;
+    bottom: 10px;
+}
+.questionsList{
+    width:100%;
+    height: calc(100% - 100px);
+    background-image: url('../../assets/New_folder/1.png');
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-size: 100% 100%;
+    max-height: 600px;
+}
+.first-X{
+    width: 100px;
+    height: 10px;
+    position: relative;
+    top: 32px;
+    left: calc(50% - 50px);
+    background-color: red;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    z-index: 1;
+    transition: all 0.5s;
+
+}
+.second-X{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    background-color: red;
+    border-radius: 6px;
+    transform: rotate(90deg);
+}
+.jokerAskPublicBox{
+    width: 96%;
+    max-width: 500px;
+    height: 250px;
+    background-color: rgba(0,0,0,0.94);
+    position: absolute;
+    bottom: 265px;
+    border: 1.5px solid rgb(74, 133, 255);
+    border-radius: 12px;
+    left: -100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: all 0.5s;
+
+}
+.jokerAskPublicBox p{
+    color:white !important;
+    text-align: center;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0 15px;
+}

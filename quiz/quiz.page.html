@@ -1,0 +1,98 @@
+<ion-content [fullscreen]="true" scrollY="false">
+  <div id="body_" style="background-color: black;">
+    <div id="info_money" (click)="openFullHelp()" class="info">
+      <div class="help">
+        <div  (click)="hideFullhelp()" class="questionsList">
+
+        </div>
+        <div class="joker" style="background-image: url('../../assets/New_folder/public.png');">
+          <div id="public-X" class="first-X" style="display: none;">
+            <div class="second-X"></div>
+          </div>
+        
+        </div>
+        <div class="joker" style="background-image: url('../../assets/New_folder/fifi.png');left:33.33%">
+          <div id="fifi-X" class="first-X" style="display: none;">
+            <div class="second-X"></div>
+          </div>
+        </div>
+        <div class="joker" style="background-image: url('../../assets/New_folder/call.png');left:66.66%">
+          <div id="call-X" class="first-X" style="display: none;">
+            <div class="second-X"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainQuizBox" class="mainBox">
+      <div class="millionareBox">
+        <div id="questionText" class="questionBox">
+          <p id="questionText_pTag">{{question}}</p>
+        </div>
+      </div>
+      <div class="answersBox">
+        <div id="answerA" (click)="selectAnswer(0)" class="singleAnswerBox">
+          <p id="answerA_pTag" >{{answerA}}</p>
+        </div>
+        <div id="answerB" (click)="selectAnswer(1)" class="singleAnswerBox">
+          <p  id="answerB_pTag" >{{answerB}}</p>
+        </div>
+        <div id="answerC" (click)="selectAnswer(2)" class="singleAnswerBox">
+          <p  id="answerC_pTag" >{{answerC}}</p>
+        </div>
+        <div id="answerD" (click)="selectAnswer(3)" class="singleAnswerBox">
+          <p  id="answerD_pTag" >{{answerD}}</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div id="fullHelp" class="fullHelp">
+    <div id="questionsListID" (click)="hideFullhelp()" class="questionsList">
+
+    </div>
+    <div (click)="useJoker(1)" class="joker" style="background-image: url('../../assets/New_folder/public.png');">
+
+    </div>
+    <div (click)="useJoker(2)" class="joker" style="background-image: url('../../assets/New_folder/fifi.png');left:33.33%">
+
+    </div>
+    <div (click)="useJoker(3)" class="joker" style="background-image: url('../../assets/New_folder/call.png');left:66.66%;">
+
+    </div>
+    
+  </div>
+
+  <div id="jokerAskPublicBoxID" class="jokerAskPublicBox">
+    <p id="1_joker" style="margin-bottom: 15px;"></p>
+    <p id="2_joker" style="margin-bottom: 15px;"></p>
+    <p id="3_joker" style="margin: 0 3px;"></p>
+    <p id="4_joker" style="margin: 0 3px;"></p>
+    <p id="5_joker" style="margin: 0 3px;"></p>
+    <p id="6_joker" style="margin: 0 3px;"></p>
+    <p id="7_joker" style="margin: 0 3px;"></p>
+    <p id="8_joker" style="margin: 0 3px;margin-bottom: 15px;"></p>
+    <p id="9_joker" style="margin: 0 3px;"></p>
+    <p id="10_joker" style="margin: 0 3px;margin-bottom: 15px;"></p>
+    <p id="11_joker" style="margin: 0 3px;"></p>
+    <p id="12_joker" style="margin: 0 3px;"></p>
+    <p id="13_joker" style="margin-bottom: 15px;"></p>
+    <p id="14_joker" style="margin-bottom: 15px;"></p>
+  </div>
+
+  <div id="currentMoneyWin" class="currentMoneyWin">
+    <img id="my_img" (click)="openSport()" style="border:1px solid black;border-radius:3px;width:90%; height:200px;margin: 0px 5%;margin-bottom: 80px;" src="../../assets/done2.PNG">
+    <div class="millionareBox">
+      <div class="questionBox">
+        <p style="font-size: 23px;padding-top:18px" >{{osiguranText}}</p>
+      </div>
+    </div>
+    <div style="width:70%;margin-left:15%;margin-top: -10px;" class="singleAnswerBox">
+      <p>{{currentWonMoneyOnLoseString}} </p>
+    </div>
+  </div>
+
+
+</ion-content>

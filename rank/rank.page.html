@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true" scrollY="false">
+  <div id="body__" style="background-color: black;">
+    <div id="leaderboard" class="leaderboard" style="display:none">
+      <p id="naj" style="text-align: center;font-size: 20px;font-weight: bold;padding: 0 15px;color:white">Najveći osvojeni iznosi ostalih igrača</p>
+      <p style="float: left;margin:10px 0 0 15px;width:20px;font-weight: bold;color:white">1.</p>
+      <div id="best1" class="my-records-record-value">
+        <p style="color:white">{{bestUserOne}} </p>
+      </div>
+
+      <p style="float: left;margin:10px 0 0 15px;width:20px;font-weight: bold;color:white">2.</p>
+      <div id="best2" class="my-records-record-value">
+        <p style="color:white">{{bestUserTwo}} </p>
+      </div>
+
+      <p style="float: left;margin:10px 0 0 15px;width:20px;font-weight: bold;color:white">3.</p>
+      <div id="best3" class="my-records-record-value">
+        <p style="color:white">{{bestUserThree}} </p>
+      </div>
+
+      <p style="float: left;margin:10px 0 0 15px;width:20px;font-weight: bold;color:white">4.</p>
+      <div id="best4" class="my-records-record-value">
+        <p style="color:white">{{bestUserFour}} </p>
+      </div>
+
+      <p style="float: left;margin:10px 0 0 15px;width:20px;font-weight: bold;color:white">5.</p>
+      <div id="best5" class="my-records-record-value">
+        <p style="color:white">{{bestUserFive}} </p>
+      </div>
+
+    </div>
+    <div class="my-records">
+      <p id="record-key" class="my-records-record-info">Najveći osvojen iznos</p>
+      <div id="record-div" class="my-records-record-value">
+        <p id="record-value">1,000,000 kn</p>
+      </div>
+
+
+      <p id="record-mil-key" class="my-records-record-info">Osvojeni iznosi od milijun kuna</p>
+      <div id="record-mil-div" class="my-records-record-value">
+        <p id="record-mil-value">0</p>
+      </div>
+
+      <p id="ukpuan_" class="my-records-record-info">Ukupan iznos osvojen</p>
+      <div class="my-records-record-value">
+        <p id="record-sum-value">0 kn</p>
+      </div>
+    </div>
+    <p style="font-size: large;width:100%;height:150px;color:red;display:none">{{error}}</p>
+    <ion-button id="butn" style="margin:10px auto;font-weight: bold;font-size: 18px;width:240px;height:50.4px;margin-left: calc(50% - 120px);text-decoration: none;" (click)="backToMenu()" color="primary">Povratak u menu</ion-button>
+  </div>
+</ion-content>

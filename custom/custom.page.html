@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true" scrollY="false">
+  <div id="body" style="background-color: black;">
+    <div id="mainBoxC" class="mainBox" style="height:295px;">
+      <p style="    text-align: center;
+      margin-bottom: 4px;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      background-color: rgba(255,255,255,0.7);">Unesite pitanje ({{questionCounter}} znakova)</p>
+      <div class="millionareBox">
+        <ion-textarea [(ngModel)]="question" maxlength="80" (ionChange)="checkQuestionLen()" class="questionInput" rows="3" cols="20"></ion-textarea>
+      </div>
+      <p style="    text-align: center;
+      margin: 4px;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      background-color: rgba(255,255,255,0.7);">Unesite odgovore (max. 20 znakova)</p>
+
+    <div class="answersBox">
+      <div id="answerA" class="singleAnswerBox">
+        <ion-input [(ngModel)]="answerA" maxlength="20" style="padding-top: 4px !important;padding-left: 9px !important;color:white !important" placeholder="A"></ion-input>
+      </div>
+      <div id="answerB" class="singleAnswerBox">
+        <ion-input [(ngModel)]="answerB" maxlength="20" style="padding-top: 4px !important;padding-left: 9px !important;color:white !important" placeholder="B"></ion-input>
+      </div>
+      <div id="answerC" class="singleAnswerBox">
+        <ion-input [(ngModel)]="answerC" maxlength="20" style="padding-top: 4px !important;padding-left: 9px !important;color:white !important" placeholder="C"></ion-input>
+      </div>
+      <div id="answerD" class="singleAnswerBox">
+        <ion-input (ionChange)="showFullQuestion()"  [(ngModel)]="answerD" maxlength="20" style="padding-top: 4px !important;padding-left: 9px !important;color:white !important" placeholder="D"></ion-input>
+      </div>
+    </div>
+    <ion-item color="primary" id="pick1" style="margin-bottom: 20px;display:none">
+      <ion-label>Izaberite točan odgovor</ion-label>
+      <ion-select [(ngModel)]="correct" placeholder="">
+        <ion-select-option value="0">A</ion-select-option>
+        <ion-select-option value="1">B</ion-select-option>
+        <ion-select-option value="2">C</ion-select-option>
+        <ion-select-option value="3">D</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="primary" id="pick2" style="display:none">
+      <ion-label>Izaberite vrijednost pitanja</ion-label>
+      <ion-select [(ngModel)]="price" placeholder="">
+        <ion-select-option value="1">100 kn</ion-select-option>
+        <ion-select-option value="2">200 kn</ion-select-option>
+        <ion-select-option value="3">300 kn</ion-select-option>
+        <ion-select-option value="4">500 kn</ion-select-option>
+        <ion-select-option value="5">1.000 kn</ion-select-option>
+        <ion-select-option value="6">2.000 kn</ion-select-option>
+        <ion-select-option value="7">4.000 kn</ion-select-option>
+        <ion-select-option value="8">8.000 kn</ion-select-option>
+        <ion-select-option value="9">16.000 kn</ion-select-option>
+        <ion-select-option value="10">32.000 kn</ion-select-option>
+        <ion-select-option value="11">64.000 kn</ion-select-option>
+        <ion-select-option value="12">125.000 kn</ion-select-option>
+        <ion-select-option value="13">250.000 kn</ion-select-option>
+        <ion-select-option value="14">500.000 kn</ion-select-option>
+        <ion-select-option value="15">1.000.000 kn</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button id="mojbutton" style="display:none;margin:10px auto;margin-top:30px;font-weight: bold;font-size: 18px;width:240px;height:50.4px;margin-left: calc(50% - 120px);text-decoration: none;" (click)="submit()" color="primary">Predaj pitanje</ion-button>
+
+  </div>
+
+
+
+
+  </div>
+</ion-content>
